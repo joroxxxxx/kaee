@@ -220,12 +220,14 @@ body {
 /* Extra small screens (phones) */
 @media (max-width: 480px) {
   body {
-    padding: 8px 2px;
+    padding: 4px 2px;
+    min-height: 100vh;
   }
   
   .container {
-    padding: 0 4px;
-    gap: 12px;
+    padding: 0 2px;
+    gap: 8px;
+    width: 100%;
   }
   
   .nav {
@@ -242,6 +244,7 @@ body {
     border-radius: 12px;
     max-width: 100%;
     width: 100%;
+    min-height: 85vh;
   }
   
   .idcard .header {
@@ -250,13 +253,18 @@ body {
   }
   
   .idcard .body {
-    padding: 12px;
-    gap: 12px;
+    padding: 16px;
+    gap: 16px;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .photo {
-    width: 100px;
-    height: 120px;
+    width: 120px;
+    height: 140px;
+    margin: 0 auto;
   }
   
   .fields {
@@ -269,11 +277,11 @@ body {
   }
   
   .label {
-    font-size: 10px;
+    font-size: 12px;
   }
   
   .value {
-    font-size: 11px;
+    font-size: 13px;
   }
   
   .footer {
