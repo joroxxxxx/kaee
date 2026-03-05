@@ -21,11 +21,13 @@ body {
     radial-gradient(900px 650px at 100% 10%, rgba(236, 72, 153, 0.30), transparent 55%),
     radial-gradient(900px 700px at 50% 120%, rgba(34, 197, 94, 0.20), transparent 55%),
     var(--bg);
-  padding: 32px 16px;
+  padding: 20px 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .container {
@@ -37,7 +39,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 .topbar {
@@ -113,14 +115,14 @@ body {
 
 @media (max-width: 859px) {
   body {
-    padding: 16px 8px;
+    padding: 12px 4px;
     min-height: 100vh;
   }
   
   .container {
     max-width: 100%;
     gap: 16px;
-    padding: 0 12px;
+    padding: 0 8px;
   }
   
   .cards {
@@ -218,11 +220,11 @@ body {
 /* Extra small screens (phones) */
 @media (max-width: 480px) {
   body {
-    padding: 12px 6px;
+    padding: 8px 2px;
   }
   
   .container {
-    padding: 0 8px;
+    padding: 0 4px;
     gap: 12px;
   }
   
@@ -239,6 +241,7 @@ body {
   .idcard {
     border-radius: 12px;
     max-width: 100%;
+    width: 100%;
   }
   
   .idcard .header {
