@@ -113,7 +113,8 @@ body {
 
 @media (max-width: 859px) {
   body {
-    padding: 16px 12px;
+    padding: 16px 8px;
+    min-height: 100vh;
   }
   
   .container {
@@ -123,7 +124,8 @@ body {
   }
   
   .cards {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     max-width: 100%;
   }
@@ -209,6 +211,71 @@ body {
     align-items: center;
     gap: 24px;
     max-width: 900px;
+  }
+}
+
+/* Touch optimizations for mobile */
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+  body {
+    padding: 12px 6px;
+  }
+  
+  .container {
+    padding: 0 8px;
+    gap: 12px;
+  }
+  
+  .nav {
+    padding: 8px;
+    gap: 6px;
+  }
+  
+  .nav button {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+  
+  .idcard {
+    border-radius: 12px;
+    max-width: 100%;
+  }
+  
+  .idcard .header {
+    padding: 12px 14px;
+    font-size: 11px;
+  }
+  
+  .idcard .body {
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .photo {
+    width: 100px;
+    height: 120px;
+  }
+  
+  .fields {
+    gap: 6px;
+  }
+  
+  .row {
+    padding: 2px 6px;
+    gap: 6px;
+  }
+  
+  .label {
+    font-size: 10px;
+  }
+  
+  .value {
+    font-size: 11px;
+  }
+  
+  .footer {
+    padding: 8px 12px;
+    font-size: 9px;
   }
 }
 
